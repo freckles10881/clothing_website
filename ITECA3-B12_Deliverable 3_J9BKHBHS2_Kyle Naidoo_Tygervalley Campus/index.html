@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Main Page</title>
+</head>
+<body>
+<!--###### H E A D E R ###### -->
+    <header>
+        <img class="header_logo" src="./imgs/logo.png" alt="logo">
+
+        <nav>
+            <ul class="navbar"> <!--Navigation Bar-->
+                <li id="navlink"><a class="active" href="./index.html">Home</a></li>
+                <li id="navlink"><a href="./shop.html">Shop</a></li>
+                <li id="navlink"><a href="./about.html">About</a></li> 
+            </ul>
+        </nav>
+
+        <a id="login-link" href="#popup" class="trigger">Login</a>
+    </header>
+
+<!--###### L O G I N & R E G I S T E R ###### -->
+    <div id="popup" class="overlay">
+        <div class="wrapper">
+            <a href="index.html" class="close">&times;</a>
+            <div class="column details">
+                <div class="signin">
+                    <h1>Sign In</h1>
+                    <form action="loginUsers.php" method="post">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <a href="">Forgot Password?</a>
+                        <button class="form-submit" type="submit" id="submit">Sign In</button>
+                    </form>
+                    <span>You dont have an account?<button id="signup">Register Here</button></span>
+                </div>
+                <div class="signup">
+                    <h1>Register</h1>
+                    <form action="registerUsers.php" method="POST">
+                        <input type="text" id="f_name" name="f_name" placeholder="first name" >
+
+                        <input type="text" id="l_name" name="l_name" placeholder="last name" >
+
+                        <input type="email" id="email" name="email" placeholder="email" >
+
+                        <input type="password" id="password" name="password" placeholder="password" >
+
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="retype password">
+                        
+                        <input type="date" name="dob" id="dob" placeholder="Date Of Birth">
+                        
+                        <button class="form-submit" type="submit" name="submit">Sign Up</button>
+                        
+                        <span>Already have an account?<button id="signin">Login Here</button></span>
+                    </form>
+                </div>
+            </div>
+            <div class="column content">
+                <div class="signin">
+                    <h1>Welcome Back</h1>
+                    <h2>To Keep connected please login with your people</h2>
+                </div>
+                <div class="signup">
+                    <h1>Hello Friend!</h1>
+                    <h2>Enter your personal details here</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--###### H E R O ###### -->
+    <section class="hero">
+
+        <h4>SHOP WITH US</h4>
+        <h2><span>BELINDA'S CLOTHING</span></h2>
+        <h2>STORE</h2>
+        <button class="normal">Shop Now</button>
+   </section>
+    
+<!--###### F E A T U R E (MALE) ###### -->
+    <div class="product-cat" class="section-p1">
+        <div class="feature-head">
+            <h1>MEN'S CLOTHING</h1>
+        </div>
+        <div class="product-container">
+            <!-- MEN PRODUCT 1 -->
+            <div class="products">
+                <img src="./imgs/products/m_product1.jpeg" onclick="window.location.href='male_product1.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- MEN PRODUCT 2 -->
+            <div class="products">
+                <img src="./imgs/products/m_product2.jpg" onclick="window.location.href='male_product2.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- MEN PRODUCT 3 -->
+            <div class="products">
+                <img src="./imgs/products/m_product3.jpeg" onclick="window.location.href='male_product3.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- MEN PRODUCT 4 -->
+            <div class="products">
+                <img src="./imgs/products/m_product4.jpeg" onclick="window.location.href='male_product4.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+        </div>
+        <button>Show More</button>
+    </div>
+   <!--###### F E A T U R E (FEMALE)###### -->
+    <div class="product-cat" class="section-p1">
+        <div class="feature-head">
+            <h1>WOMEN'S CLOTHING</h1>
+        </div>
+
+        <div class="product-container">
+            <!-- WOMEN PRODUCT 1 -->
+            <div class="products">
+                <img src="./imgs/products/w_product1.jpg" onclick="window.location.href='female_product1.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- WOMEN PRODUCT 2 -->
+            <div class="products">
+                <img src="./imgs/products/w_product2.jpg" onclick="window.location.href='female_product2.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- WOMEN PRODUCT 3 -->
+            <div class="products">
+                <img src="./imgs/products/w_product3.jpg" onclick="window.location.href='female_product3.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+            <!-- WOMEN PRODUCT 4 -->
+            <div class="products">
+                <img src="./imgs/products/w_product4.jpg" onclick="window.location.href='female_product4.html';" alt="m_product1">
+                <div class="product-desc">
+                    <span>Men</span>
+                    <h5>Black Tee</h5>
+                    <h4>R 149,99</h4>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+            </div>
+        </div>
+        <button onclick="shop.html">Show More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div id="#popup" class="overlay">
+    <div class="wrapper">
+        <a href="#" class="close">&times;</a>
+
+        <div class="column details">
+########### LOGIN FORM START ###########
+            <div class="login">
+                <h1>Login</h1>
+                <form action="" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Enter E-mail Address ">
+                    <input type="password" id="password" name="password" placeholder="Enter Password">
+
+                    <button class="form-submit" type="submit" id="login_submit">Login</button>
+
+                    <span>No Account? <button id="register">Register</button></span>
+                </form>
+            </div>
+########### LOGIN FORM END ###########
+            <div class="register">
+                <h1>Register</h1>
+                <form action="" method="POST">
+                    <input type="text" id="f_name" name="first_name" placeholder="first name" >
+                    <input type="text" id="l_name" name="last_name" placeholder="last name" >
+                    <input type="email" id="email" name="email" placeholder="email" >
+                    <input type="password" id="password" name="password" placeholder="password" >
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="retype password">
+                    <input type="date" name="dob" id="dob" placeholder="Date Of Birth">
+                    
+                    <button class="form-submit" type="submit" name="regiter-submit">Register</button>
+                </form>
+                <span>Already have an account? <button id="login">Login</button></span>
+            </div>
+        </div>
+        <div class="column content">
+            <div class="signin">
+                <h1>Welcome Back</h1>
+                <h2>To Keep connected please login with your people</h2>
+            </div>
+            <div class="signup">
+                <h1>Hello Friend!</h1>
+                <h2>Enter your personal details here</h2>
+            </div>
+        </div>
+    </div>
+</div> -->
+
